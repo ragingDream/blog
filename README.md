@@ -12,9 +12,11 @@
 
 ## hosts绑定github
 2018-03-17： 最近github连接一直超时，可能是长城防火墙误伤了
-解决方案：添加hosts
+
+解决方案：
+
 ```
-// hosts：
+// 添加hosts：
 192.30.253.112 github.com
 192.30.253.113 github.com
 ```
