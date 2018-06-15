@@ -8,9 +8,6 @@
     // 当打开文件时，将基于文件内容检测 "editor.tabSize" 和 "editor.insertSpaces"
     "editor.detectIndentation": false,
 
-    // 控制编辑器是否应在键入后自动设置行的格式
-    "editor.formatOnType": true,
-
     // 通过使用鼠标滚轮同时按住 Ctrl 可缩放编辑器的字体
     "editor.mouseWheelZoom": true,
 
@@ -31,8 +28,9 @@
     //  - "bounded" (在视区宽度和 "editor.wordWrapColumn" 两者的较小者处换行)
     "editor.wordWrap": "on",
 
-    // 为指定的语法定义配置文件或使用带有特定规则的配置文件
+    // 在默认不支持 Emmet 的语言中启用 Emmet 缩写功能。在此添加该语言与受支持的语言间的映射
     "emmet.includeLanguages": {
+        "vue-html": "html",
         "javascript": "javascriptreact"
     },
 
@@ -56,7 +54,7 @@
 
             //要求使用骆驼拼写法
             "camelcase": ["error", {
-                    "properties": "always"
+                "properties": "always"
             }],
 
             //要求或禁止使用拖尾逗号
@@ -177,10 +175,7 @@
             "switch-colon-spacing": ["error", {
                 "after": true,
                 "before": false
-            }],
-
-            //强制 typeof 表达式与有效的字符串进行比较
-            "valid-typeof": "error"
+            }]
         },
         "parser": "babel-eslint",
         "plugins": [
@@ -267,6 +262,13 @@
     // 选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密
     "less.lint.idSelector": "warning",
 
+    // Prettier 插件更多配置，请查阅：https://prettier.io/docs/en/options.html
+    // Include parentheses around a sole arrow function parameter
+    "prettier.arrowParens": "always",
+
+    // Number of spaces it should use per tab
+    "prettier.tabWidth": 4,
+
     // 配置 glob 模式以在搜索中排除文件和文件夹。从 files.exclude 设置中继承所有 glob 模式
     "search.exclude": {
         "**/dist": true,
@@ -301,6 +303,9 @@
     "sync.lastUpload": "2018-06-14T08:04:29.105Z",
     "sync.lastDownload": "",
     "sync.forceDownload": false,
+
+    // Default formatter for <template> region
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
 
     // 控制在已有窗口时新打开窗口的尺寸。默认情况下，新窗口将以小尺寸在屏幕的中央打开。当设置为“inherit”时，新窗口将继承上一活动窗口的尺寸，设置为“maximized”时窗口将被最大化，设置为“fullscreen”时则变为全屏。请注意，此设置对第一个打开的窗口无效。第一个窗口总是会恢复关闭前的大小和位置
     "window.newWindowDimensions": "maximized",
