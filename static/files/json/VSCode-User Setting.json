@@ -1,0 +1,319 @@
+﻿{
+    // 零不需要单位
+    "css.lint.zeroUnits": "warning",
+
+    // 选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密
+    "css.lint.idSelector": "warning",
+
+    // 当打开文件时，将基于文件内容检测 "editor.tabSize" 和 "editor.insertSpaces"
+    "editor.detectIndentation": false,
+
+    // 控制编辑器是否应在键入后自动设置行的格式
+    "editor.formatOnType": true,
+
+    // 通过使用鼠标滚轮同时按住 Ctrl 可缩放编辑器的字体
+    "editor.mouseWheelZoom": true,
+
+    // 控制键入时是否应自动显示建议
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+
+    // 控制是否将代码段与其他建议一起显示以及它们的排序方式
+    "editor.snippetSuggestions": "top",
+
+    // 控制折行方式。可以选择:
+    //  - "off" (禁用折行)，
+    //  - "on" (根据视区宽度折行)，
+    //  - "wordWrapColumn" (在 "editor.wordWrapColumn" 处换行)
+    //  - "bounded" (在视区宽度和 "editor.wordWrapColumn" 两者的较小者处换行)
+    "editor.wordWrap": "on",
+
+    // 为指定的语法定义配置文件或使用带有特定规则的配置文件
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+
+    // 为指定的语法定义配置文件或使用带有特定规则的配置文件
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+
+    // The eslint options object to provide args normally passed to eslint when executed from a command line (see http://eslint.org/docs/developer-guide/nodejs-api#cliengine)
+    "eslint.options": {
+        "rules": {
+            //强制数组方括号中使用一致的空格
+            "array-bracket-spacing": ["error", "never"],
+
+            //要求箭头函数的参数使用圆括号
+            "arrow-parens": ["error", "always"],
+
+            //强制在代码块中使用一致的大括号风格
+            "brace-style": "error",
+
+            //要求使用骆驼拼写法
+            "camelcase": ["error", {
+                    "properties": "always"
+            }],
+
+            //要求或禁止使用拖尾逗号
+            "comma-dangle": ["error", {
+                "arrays": "never",
+                "objects": "never",
+                "imports": "never",
+                "exports": "never",
+                "functions": "ignore"
+            }],
+
+            //强制使用一致的逗号风格
+            "comma-style": ["error", "last"],
+
+            //禁止或强制在计算属性中使用空格
+            "computed-property-spacing": ["error", "never"],
+
+            //要求在构造函数中有 super() 的调用
+            "constructor-super": "error",
+
+            //强制所有控制语句使用一致的括号风格
+            "curly": "error",
+
+            //要求或禁止文件末尾保留一行空行
+            "eol-last": ["error", "always"],
+
+            //强制使用一致的缩进
+            "indent": ["error", 4],
+
+            //强制使用一致的换行符风格
+            "linebreak-style": ["error", "unix"],
+
+            //禁止修改类声明的变量
+            "no-class-assign": "error",
+
+            //禁止在条件语句中出现赋值操作符
+            "no-cond-assign": ["error", "always"],
+
+            //不允许改变用const声明的变量
+            "no-const-assign": "error",
+
+            //禁止在条件中使用常量表达式
+            "no-constant-condition": "error",
+
+            //禁止 function 定义中出现重名参数
+            "no-dupe-args": "error",
+
+            //禁止类成员中出现重复的名称
+            "no-dupe-class-members": "error",
+
+            //禁止在对象字面量中出现重复的键
+            "no-dupe-keys": "error",
+
+            //禁止重复 case 标签
+            "no-duplicate-case": "error",
+
+            //禁止空块语句
+            "no-empty": "error",
+
+            //禁止不必要的布尔类型转换
+            "no-extra-boolean-cast": "error",
+
+            //禁用不必要的分号
+            "no-extra-semi": "error",
+
+            //禁止 case 语句落空
+            "no-fallthrough": "error",
+
+            //禁止使用 空格 和 tab 混合缩进
+            "no-mixed-spaces-and-tabs": "error",
+
+            //不允许多个空行
+            "no-multiple-empty-lines": "error",
+
+            //禁止使用多个空格
+            "no-multi-spaces": "error",
+
+            //禁止多次声明同一变量
+            "no-redeclare": "error",
+
+            //禁止正则表达式字面量中出现多个空格
+            "no-regex-spaces": "error",
+
+            //禁用未声明的变量
+            "no-undef": "error",
+
+            //禁止出现未使用过的变量
+            "no-unused-vars": "error",
+
+            //要求使用 let 或 const 而不是 var
+            "no-var": "error",
+
+            //禁止属性前有空白
+            "no-whitespace-before-property": "error",
+
+            //要求使用模板字面量而非字符串连接
+            "prefer-template": "error",
+
+            //要求对象字面量属性名称使用引号
+            "quote-props": ["error", "always"],
+
+            //要求或禁止使用分号代替 ASI
+            "semi": ["error", "always"],
+
+            //强制分号的位置
+            "semi-style": ["error", "last"],
+
+            //强制在块之前使用一致的空格
+            "space-before-blocks": "error",
+
+            //强制在 function的左括号之前使用一致的空格
+            "space-before-function-paren": ["error", "always"],
+
+            //强制在圆括号内使用一致的空格
+            "space-in-parens": ["error", "never"],
+
+            //强制在 switch 的冒号左右有空格
+            "switch-colon-spacing": ["error", {
+                "after": true,
+                "before": false
+            }],
+
+            //强制 typeof 表达式与有效的字符串进行比较
+            "valid-typeof": "error"
+        },
+        "parser": "babel-eslint",
+        "plugins": [
+            "html",
+            "javascript",
+            {
+                "language": "vue",
+                "autoFix": true
+            },
+            "vue",
+            "react"
+        ],
+        "extends": [
+            "eslint:recommended",
+            "plugin:react/recommended"
+        ]
+    },
+
+    // An array of language ids which should be validated by ESLint
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+
+    // 控制在资源管理器内拖放移动文件或文件夹时是否进行确认
+    "explorer.confirmDragAndDrop": false,
+
+    // 控制资源管理器是否应在删除文件到废纸篓时进行确认
+    "explorer.confirmDelete": false,
+
+    // 如果设置为 "true"，将不再显示扩展建议的通知
+    "extensions.ignoreRecommendations": true,
+
+    // By default, create file  username
+    "fileheader.Author": "chenzl",
+
+    // By default, update file  username
+    "fileheader.LastModifiedBy": "chenzl",
+
+    // 配置语言的文件关联(如: "*.extension": "html")。这些关联的优先级高于已安装语言的默认关联
+    "files.associations": {
+        "*.vue": "vue"
+    },
+
+    // 控制已更新文件的自动保存。接受的值:“off”、"afterDelay”、“onFocusChange”(编辑器失去焦点)、“onWindowChange”(窗口失去焦点)。如果设置为“afterDelay”，则可在 "files.autoSaveDelay" 中配置延迟
+    "files.autoSave": "onWindowChange",
+
+    // 配置 glob 模式以排除文件和文件夹
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.idea": true,
+        "**/node_modules": true,
+        "**/.vscode": true
+    },
+
+    // 启用后，将在保存文件时剪裁尾随空格
+    "files.trimTrailingWhitespace": true,
+
+    // Specifies which messages should be suppressed
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+
+    // Specifies how the `GitLens` explorer will display files
+    //  `auto` - automatically switches between displaying files as a `tree` or `list` based on the `gitlens.gitExplorer.files.threshold` setting and the number of files at each nesting level
+    //  `list` - displays files as a list
+    //  `tree` - displays files as a tree
+    "gitlens.gitExplorer.files.layout": "list",
+
+    // 标记列表，以逗号分隔，其前应有额外新行。"null" 默认为“标头、正文、/html”
+    "html.format.extraLiners": "",
+
+    // 缩进 <head> 和 <body> 部分
+    "html.format.indentInnerHtml": true,
+
+    // 零不需要单位
+    "less.lint.zeroUnits": "warning",
+
+    // 选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密
+    "less.lint.idSelector": "warning",
+
+    // 配置 glob 模式以在搜索中排除文件和文件夹。从 files.exclude 设置中继承所有 glob 模式
+    "search.exclude": {
+        "**/dist": true,
+        "**/build": true,
+        "**/elehukouben": true,
+        "**/.git": true,
+        "**/.gitignore": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/.idea": true,
+        "**/.vscode": false,
+        "**/yarn.lock": true,
+        "**/tmp": true
+    },
+
+    // 零不需要单位
+    "scss.lint.zeroUnits": "warning",
+
+    // 选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密
+    "scss.lint.idSelector": "warning",
+
+    // 设置同步github
+    "sync.gist": "19bbfd0e6246297b8f7dee44be225620",
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastUpload": "2018-06-14T08:04:29.105Z",
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+
+    // 控制在已有窗口时新打开窗口的尺寸。默认情况下，新窗口将以小尺寸在屏幕的中央打开。当设置为“inherit”时，新窗口将继承上一活动窗口的尺寸，设置为“maximized”时窗口将被最大化，设置为“fullscreen”时则变为全屏。请注意，此设置对第一个打开的窗口无效。第一个窗口总是会恢复关闭前的大小和位置
+    "window.newWindowDimensions": "maximized",
+
+    // 控制文件夹应在新窗口中打开
+    "window.openFoldersInNewWindow": "on",
+
+    // 指定工作台中使用的颜色主题
+    "workbench.colorTheme": "One Dark Pro Vivid",
+
+    // 指定在工作台中使用的图标主题，或指定 "null" 以不显示任何文件图标
+    "workbench.iconTheme": "vscode-icons",
+
+    // 在未能恢复上一会话信息的情况下，控制启动时显示的编辑器。选择 "none" 表示启动时不打开编辑器，"welcomePage" 表示打开欢迎页面(默认)，"newUntitledFile" 表示打开新的无标题文档(仅打开一个空工作区)
+    "workbench.startupEditor": "newUntitledFile"
+}
