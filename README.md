@@ -4,7 +4,7 @@
 [进入博客](https://github.com/czl0705/blog/issues)
 
 ## 建博初衷
-学习、记录、分享
+学习、归纳、总结、分享
 
 ## 文章列表
 - [Markdown 常用语法说明](https://github.com/czl0705/blog/issues/2) 2018-03-03
