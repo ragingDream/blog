@@ -22,3 +22,4 @@
 - [window 系统下常用快捷键整理](https://github.com/czl0705/blog/issues/29) 2018-07-06
 - [工欲善其事，必先利其器 -- VSCode](https://github.com/czl0705/blog/issues/22) 2018-07-16
 - [Chrome 浏览器常用快捷键](https://github.com/czl0705/blog/issues/30) 2018-07-16
+- [版本号命名指南](https://github.com/czl0705/blog/issues/31) 2018-07-24
