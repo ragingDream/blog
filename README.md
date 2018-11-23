@@ -29,3 +29,4 @@
 - [Package.json 中库的版本号详解](https://github.com/ragingDream/blog/issues/32) 2018-08-27
 - [cmd 常用命令整理](https://github.com/ragingDream/blog/issues/33) 2018-11-01
 - [常用工具整理](https://github.com/ragingDream/blog/issues/34) 2018-11-01
+- [《编写可读代码的艺术》- 观后感](https://github.com/ragingDream/blog/issues/35) 2018-11-29
